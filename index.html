@@ -9,6 +9,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
     <!-- Navbar -->
@@ -27,7 +30,7 @@
                 <a href="#contact">Contact Me</a>
             </div>
             <div class="darkmode">
-                <a href=""><i class='bx  bx-moon'  ></i> </a>
+                <a href=""><i class='bx  bx-moon' ></i> </a>
             </div>
         </div>
     </div>
@@ -44,10 +47,10 @@
         </div>
         <div class="alexa">
          <h4>Hi, I'm Rakhi</h4>
-         <h6 style="font-size: 24px; color: rgb(0,0,0,0.6);">Frontend Developer</h6>
+         <h6>Frontend Developer</h6>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsum accusamus quos!</p>
          <div class="button1"> <button  class="btn1">Contact Me <i class='bx bx-send'></i></button>   </div>
-        <div class="button2"><button class="btn2"> <i class='bx bx-mouse' ></i> Scroll Down <i class='bx bx-down-arrow-alt' style="padding-top: 5px;"></i></button> </div>
+        <div class="button2"><button class="btn2"> <i class='bx bx-mouse' ></i> Scroll Down <i class='bx bx-down-arrow-alt'></i></button> </div>
         </div>
         </div>
         <div class="photo">
@@ -89,53 +92,108 @@
      <h4>Skills</h4>
     <p class="sub-title">My technical level</p>   
     </div>
-    <div class="first-skill">
-    <ul>
-    <li>
-    <a href="#" class="no1"><i class='bx bx-code-curly' ></i>Frontend developer</a> <br>
-    <a href="#" class="no1-subtitle">More than 4 years</a>
-    <ul class="drop-down">
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">Javascript</a></li>
-        <li><a href="#">React</a></li>
-    </ul>
-    </li>
-    </ul>
+<!-- Dropdown-box -->
+ 
+<div class="dropdown-menu">
+  <!-- First Row -->
+  <div class="row">
+    <!-- Dropdown 1 -->
+    <div class="dropdown-block">
+      <div class="title-container">
+        <div class="left-section">
+          <i class='bx bx-code-curly title-icon'></i>
+          <div class="title-texts">
+            <div class="main-title">Frontend Developer</div>
+            <div class="sub-title">More than 4 years</div>
+          </div>
+        </div>
+        <i class='bx bx-chevron-down chevron-icon'></i>
+      </div>
+      <div class="skill-container">
+        <div class="skill html">
+          <div class="skill-name"><span>HTML</span><span  style="color: rgba(0, 0, 0, 0.7);">90%</span></div>
+          <div class="skill-line"><div class="bar-fill"></div></div>
+        </div>
+        <div class="skill css">
+          <div class="skill-name"><span>CSS</span><span  style="color: rgba(0, 0, 0, 0.7);">80%</span></div>
+          <div class="skill-line"><div class="bar-fill"></div></div>
+        </div>
+        <div class="skill javascript">
+          <div class="skill-name"><span>JavaScript</span><span  style="color: rgba(0, 0, 0, 0.7);">75%</span></div>
+          <div class="skill-line"><div class="bar-fill"></div></div>
+        </div>
+        <div class="skill python">
+          <div class="skill-name"><span>Python</span><span  style="color: rgba(0, 0, 0, 0.7);">85%</span></div>
+          <div class="skill-line"><div class="bar-fill"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dropdown 2 -->
+    <div class="dropdown-block" style="margin-top: 15px;">
+      <div class="title-container">
+        <div class="left-section">
+         <i class='bx bx-server'></i>
+          <div class="title-texts">
+            <div class="main-title">Backend Developer</div>
+            <div class="sub-title">More than 3 years</div>
+          </div>
+        </div>
+        <i class='bx bx-chevron-down chevron-icon'></i>
+      </div>
+      <div class="skill-container">
+        <div class="skill html">
+          <div class="skill-name"><span>Node.js</span><span style="color: rgba(0, 0, 0, 0.7);">85%</span></div>
+          <div class="skill-line"><div class="bar-fill"></div></div>
+        </div>
+        <div class="skill css">
+          <div class="skill-name"><span>PHP</span><span  style="color: rgba(0, 0, 0, 0.7);">80%</span></div>
+          <div class="skill-line"><div class="bar-fill"></div></div>
+        </div>
+        <div class="skill javascript">
+          <div class="skill-name"><span>MongoDB</span><span  style="color: rgba(0, 0, 0, 0.7);">75%</span></div>
+          <div class="skill-line"><div class="bar-fill"></div></div>
+        </div>
+          <div class="skill python">
+          <div class="skill-name"><span>Python</span><span  style="color: rgba(0, 0, 0, 0.7);">85%</span></div>
+          <div class="skill-line"><div class="bar-fill"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Row -->
+  <div class="row">
+    <!-- Dropdown 3 -->
+    <div class="dropdown-block">
+      <div class="title-container">
+        <div class="left-section">
+        <i class='bx bx-palette'></i>          
+        <div class="title-texts">
+            <div class="main-title">UI/UX Designer</div>
+            <div class="sub-title">2 years</div>
+          </div>
+        </div>
+        <i class='bx bx-chevron-down chevron-icon'></i>
+      </div>
+      <div class="skill-container">
+        <div class="skill html">
+          <div class="skill-name"><span>Figma</span><span  style="color: rgba(0, 0, 0, 0.7);">80%</span></div>
+          <div class="skill-line"><div class="bar-fill"></div></div>
+        </div>
+        <div class="skill css">
+          <div class="skill-name"><span>Sketch</span><span  style="color: rgba(0, 0, 0, 0.7);">75%</span></div>
+          <div class="skill-line"><div class="bar-fill"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-    <div class="first-skill">
-    <ul>
-    <li>
-    <a href="#" class="no1"><i class='bx bx-code-curly' ></i>Frontend developer</a> <br>
-    <a href="#" class="no1-subtitle">More than 4 years</a>
-    <ul class="drop-down">
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">Javascript</a></li>
-        <li><a href="#">React</a></li>
-    </ul>
-    </li>
-    </ul>
-</div>
 
-    <div class="first-skill">
-    <ul>
-    <li>
-    <a href="#" class="no1"><i class='bx bx-code-curly' ></i>Frontend developer</a> <br>
-    <a href="#" class="no1-subtitle">More than 4 years</a>
-    <ul class="drop-down">
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">Javascript</a></li>
-        <li><a href="#">React</a></li>
-    </ul>
-    </li>
-    </ul>
-</div>
  </section>
 
- <!-- Qualification -->
+ <!-- Qualification
     <div class="qualified">
      <h4> Qualification </h4>
      <p class="sub-title">My personal journey</p>   
@@ -150,54 +208,157 @@
            <div class="work">
             
            </div>        
-        </div>
+        </div> -->
 
         <!-- Services -->
          <div id="services">
          <div class="service">
            <h4> Services</h4>
-        <p class="sub-title">What i offer</p>   
+           <p class="sub-title">What i offer</p>   
          </div>
-         <div class="three-service">
-         <div class="box1">
-            <div class="box2">
-                <!-- <div class="service1">
-                    <p>UI/UX <br>Designer</p>
-                    <a href="">View More</a>
-                </div> -->
+         <div class="service-type">
+            <div class="box1">
+                <div class="icon1"><i class='bx bx-palette '></i></i></div>
+                <p>UI/UX <br> Designer</p>
+               <div class="view-more-btn"> View More<i class='bx bx-right-arrow-alt'></i></div>
             </div>
-         </div>
+            <!-- Overlay -->
+<div class="overlay" id="overlay">
+  <div class="overlay-content">
+    <span class="close-btn">&times;</span>
+    <h4>UI/UX Designer</h4>
+    <ul>
+      <li> I develop the user interface.</li>
+      <li>Web page development.</li>
+      <li> I can create UX element interactions.</li>
+      <li> I position your company brand.</li>
+    </ul>
+  </div>
+</div>
+              <div class="box1">
+                <div class="icon1"><i class='bx bx-code'></i></i></div>
+                <p> Frontend  <br>Developer</p>
+               <div class="view-more-btn"> View More<i class='bx bx-right-arrow-alt'></i></div>
+            </div>
+    <!-- Overlay -->
+<div class="overlay" id="overlay2">
+  <div class="overlay-content">
+    <span class="close-btn">&times;</span>
+    <h4>UI/UX Designer</h4>
+    <ul>
+      <li> I develop the user interface.</li>
+      <li> Web page development.</li>
+      <li> I can create UX element interactions.</li>
+      <li> I position your company brand.</li>
+    </ul>
+  </div>
+</div>
 
-         <div class="box1">
-            <div class="box2">
-                <!-- <div class="service1">
-                    <p>UI/UX <br>Designer</p>
-                    <a href="">View More</a>
-                </div> -->
-            </div>
+              <div class="box1">
+                <div class="icon1"><i class='bx bx-edit-alt'></i></div>
+                <p>Branding<br> Designer</p>
+               <div class="view-more-btn"> View More<i class='bx bx-right-arrow-alt'></i></div>
+              </div>
+               <!-- Overlay -->
+<div class="overlay" id="overlay3">
+  <div class="overlay-content">
+    <span class="close-btn">&times;</span>
+    <h4>UI/UX Designer</h4>
+    <ul>
+      <li> I develop the user interface.</li>
+      <li> Web page development.</li>
+      <li> I can create UX element interactions.</li>
+      <li> I position your company brand.</li>
+    </ul>
+  </div>
+</div>
          </div>
+         </div>
+        
 
-         <div class="box1">
-            <div class="box2">
-                <!-- <div class="service1">
-                    <p>UI/UX <br>Designer</p>
-                    <a href="">View More</a>
-                </div> -->
+
+
+         
+
+<!-- Portfolio -->
+        <div id="portfolio">
+        <div class="website">
+        <h4> Portfolio</h4>
+        <p class="sub-title">Most recent work</p>   </div>
+        <section class="portfolio">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="portfolio-container">
+          <div class="img1">
+            <img src="images/me.png" alt="">
+          </div>
+          <div class="portfolio-detail">
+            <div class="first-title">Modern Website</div>
+            <div class="first-description">
+              Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.
             </div>
-         </div>
+            <div class="button6">
+              <button class="btn6">Demo <i class='bx bx-right-arrow-alt'></i></button>
+            </div>
+          </div>
         </div>
+      </div>
 
-
-        <!-- Portfolio -->
-         <div id="portfolio">
-            <div class="website">
-                 <h4> Portfolio</h4>
-        <p class="sub-title">Most recent work</p>   
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="portfolio-container">
+          <div class="img1">
+            <img src="images/me.png" alt="">
+          </div>
+          <div class="portfolio-detail">
+            <div class="first-title">Another Project</div>
+            <div class="first-description">
+              Another example of a cool responsive <br> portfolio website.
             </div>
-         </div>
+            <div class="button6">
+              <button class="btn6">Demo <i class='bx bx-right-arrow-alt'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Slide 3 -->
+         <div class="swiper-slide">
+        <div class="portfolio-container">
+          <div class="img1">
+            <img src="images/me.png" alt="">
+          </div>
+          <div class="portfolio-detail">
+            <div class="first-title">Another Project</div>
+            <div class="first-description">
+              Another example of a cool responsive <br> portfolio website.
+            </div>
+            <div class="button6">
+              <button class="btn6">Demo <i class='bx bx-right-arrow-alt'></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-         <!-- Contact -->
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- Pagination Dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+        </div>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
+      
+<!-- Contact -->
           <div class="bigbox-container">
           <div class="bigbox">
             <p class="first-line">You have a new project</p>
@@ -211,63 +372,172 @@
           
 <!-- Testimonials -->
 <section class="third-last">
-    <div class="title-testimonial">
-        <h4>Testimonials</h4>
-        <p class="sub-title">My client saying</p>    
+  <div class="title-testimonial">
+    <h4>Testimonials</h4>
+    <p class="sub-title">My client saying</p>    
+  </div>
+
+  <div class="all-message testimonial-track">
+    
+    <div class="testimonial1 testimonial-card">
+      <div class="testimonial-container">
+        <div class="name-photo">
+          <div class="person1">
+            <img src="images/about.avif" alt="">
+          </div>
+          <div class="nameofperson">
+            <h6>Herr Muller</h6>
+            <p>Client</p>
+          </div>
+        </div>
+        <div class="ratings">
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+        </div>
+      </div>
+      <div class="client-message">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore iusto cumque. Perspiciatis, quibusdam ducimus.
+      </div>
     </div>
-    <div class="all-message">
-    <div class="testimonial1">
-<div class="testimonial-container">
-    <div class="name-photo">
-    <div class="person1">
-        <img src="images/about.avif" alt="">
+
+    <div class="testimonial2 testimonial-card">
+      <div class="testimonial-container">
+        <div class="name-photo">
+          <div class="person1">
+            <img src="images/about.avif" alt="">
+          </div>
+          <div class="nameofperson">
+            <h6>Frau Schmidt</h6>
+            <p>Client</p>
+          </div>
+        </div>
+        <div class="ratings">
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+        </div>
+      </div>
+      <div class="client-message">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore iusto cumque. Perspiciatis, quibusdam ducimus.
+      </div>
     </div>
-    <div class="nameofperson">
-        <h6>Herr Muller</h6>
-        <p>Client</p>
-    </div>
-    </div>
-    <div class="ratings">
-        <div class="star1"><i class='bx bx-star'></i></div>
-        <div class="star1"><i class='bx bx-star'></i></div>
-        <div class="star1"><i class='bx bx-star'></i></div>
-        <div class="star1"><i class='bx bx-star'></i></div>
-        <div class="star1"><i class='bx bx-star'></i></div>
-    </div>
-   </div>
-   <div class="client-message">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore iusto cumque. Perspiciatis, quibusdam ducimus.
-   </div>
-</div>
 
 
- <div class="testimonial2">
-<div class="testimonial-container">
-    <div class="name-photo">
-    <div class="person1">
-        <img src="images/about.avif" alt="">
+     <div class="testimonial2 testimonial-card">
+      <div class="testimonial-container">
+        <div class="name-photo">
+          <div class="person1">
+            <img src="images/about.avif" alt="">
+          </div>
+          <div class="nameofperson">
+            <h6>Frau Schmidt</h6>
+            <p>Client</p>
+          </div>
+        </div>
+        <div class="ratings">
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+        </div>
+      </div>
+      <div class="client-message">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore iusto cumque. Perspiciatis, quibusdam ducimus.
+      </div>
     </div>
-    <div class="nameofperson">
-        <h6>Herr Muller</h6>
-        <p>Client</p>
+
+
+
+     <div class="testimonial2 testimonial-card">
+      <div class="testimonial-container">
+        <div class="name-photo">
+          <div class="person1">
+            <img src="images/about.avif" alt="">
+          </div>
+          <div class="nameofperson">
+            <h6>Frau Schmidt</h6>
+            <p>Client</p>
+          </div>
+        </div>
+        <div class="ratings">
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+        </div>
+      </div>
+      <div class="client-message">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore iusto cumque. Perspiciatis, quibusdam ducimus.
+      </div>
     </div>
+   
+
+    
+     <div class="testimonial2 testimonial-card">
+      <div class="testimonial-container">
+        <div class="name-photo">
+          <div class="person1">
+            <img src="images/about.avif" alt="">
+          </div>
+          <div class="nameofperson">
+            <h6>Frau Schmidt</h6>
+            <p>Client</p>
+          </div>
+        </div>
+        <div class="ratings">
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+        </div>
+      </div>
+      <div class="client-message">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore iusto cumque. Perspiciatis, quibusdam ducimus.
+      </div>
     </div>
-    <div class="ratings">
-        <div class="star1"><i class='bx bx-star'></i></div>
-        <div class="star1"><i class='bx bx-star'></i></div>
-        <div class="star1"><i class='bx bx-star'></i></div>
-        <div class="star1"><i class='bx bx-star'></i></div>
-        <div class="star1"><i class='bx bx-star'></i></div>
+
+    
+     <div class="testimonial2 testimonial-card">
+      <div class="testimonial-container">
+        <div class="name-photo">
+          <div class="person1">
+            <img src="images/about.avif" alt="">
+          </div>
+          <div class="nameofperson">
+            <h6>Frau Schmidt</h6>
+            <p>Client</p>
+          </div>
+        </div>
+        <div class="ratings">
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+          <div class="star1"><i class='bx bx-star'></i></div>
+        </div>
+      </div>
+      <div class="client-message">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore iusto cumque. Perspiciatis, quibusdam ducimus.
+      </div>
     </div>
-   </div>
-   <div class="client-message">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore iusto cumque. Perspiciatis, quibusdam ducimus.
-   </div>
-</div></div>
+
+    <!-- Add more testimonials here... -->
+
+  </div>
 </section>
+
 
 <!-- Contact Me -->
  <section class="second-last">
+    <div id="contact">
     <div class="title-contact">
          <h4>Contact Me</h4>
         <p class="sub-title">Get in Touch</p>   
@@ -318,7 +588,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore iusto c
 
 </div>
 </div>
-
+</div>
  </section>
 
     <!-- Footer -->
@@ -345,7 +615,120 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam inventore iusto c
        <p><i class='bx bx-copyright'></i>  Bedimcode. All right reserved.</p>
        </div></div>
     </section>
+<!-- Portfolio -->
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
 
+
+
+ <!-- Skill    -->
+<script>
+  const dropdownBlocks = document.querySelectorAll('.dropdown-block');
+
+  dropdownBlocks.forEach(block => {
+    const title = block.querySelector('.title-container');
+    const dropdown = block.querySelector('.skill-container');
+    const chevron = block.querySelector('.chevron-icon');
+
+    title.addEventListener('click', () => {
+      const isOpen = dropdown.style.display === 'block';
+      dropdown.style.display = isOpen ? 'none' : 'block';
+      chevron.classList.toggle('rotate', !isOpen);
+    });
+  });
+</script>
+
+<!-- Services -->
+<script>
+  const viewBtns = document.querySelectorAll(".view-more-btn");
+  const overlays = [
+    document.getElementById("overlay"),
+    document.getElementById("overlay2"),
+    document.getElementById("overlay3")
+  ];
+
+  viewBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      overlays[index].style.display = "flex";
+    });
+  });
+
+  // Close buttons: get all and hide their respective overlay
+  const closeBtns = document.querySelectorAll(".close-btn");
+  closeBtns.forEach((close, index) => {
+    close.addEventListener("click", () => {
+      overlays[index].style.display = "none";
+    });
+  });
+</script>
+
+
+
+<!-- Testimonial -->
+<script>
+const track = document.querySelector('.testimonial-track');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+track.addEventListener('mousedown', (e) => {
+  isDown = true;
+  track.classList.add('active');
+  startX = e.pageX - track.offsetLeft;
+  scrollLeft = track.scrollLeft;
+});
+
+track.addEventListener('mouseleave', () => {
+  isDown = false;
+  track.classList.remove('active');
+});
+
+track.addEventListener('mouseup', () => {
+  isDown = false;
+  track.classList.remove('active');
+});
+
+track.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - track.offsetLeft;
+  const walk = (x - startX) * 2; // speed factor
+  track.scrollLeft = scrollLeft - walk;
+});
+</script>
+    
+
+    
+<!-- Darkmode -->
+    <script>
+        const toggleBtn = document.querySelector('.darkmode i');
+
+        toggleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.body.classList.toggle('dark-mode');
+
+            if(toggleBtn.classList.contains('bx-moon')){
+                toggleBtn.classList.remove('bx-moon');
+                toggleBtn.classList.add('bx-sun');
+            }
+            else{
+                toggleBtn.classList.remove('bx-sun');
+                toggleBtn.classList.add('bx-moon');
+            }
+        });
+    </script>
 
 
 </body>
