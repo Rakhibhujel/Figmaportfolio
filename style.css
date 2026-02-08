@@ -3,6 +3,11 @@
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+
+html{
+  scroll-padding-top: 80px;
+}
+
 body.dark-mode {
   background-color: #121212;
   color: white;
@@ -119,13 +124,13 @@ a {
   gap: 79px;
 }
 i.bxl-linkedin,
-i.bxl-dribbble,
 i.bxl-github {
   font-size: 24px;
 }
+
 .home .icon i {
   display: flex;
-  padding-top: 53px;
+  padding-top: 45px;
   color: #4c45b2;
 }
 
@@ -144,7 +149,7 @@ i.bxl-github {
   line-height: 33px;
 }
 .home .alexa .btn1 {
-  margin-top: 30px;
+  margin-top: 25px;
   background-color: var(--background-color);
   border: none;
   height: var(--btn-height);
@@ -160,7 +165,7 @@ i.bxl-github {
   width: 21px;
 }
 .home .alexa .btn2 {
-  margin-top: 67px;
+  margin-top: 50px;
   border: none;
   height: var(--btn-height);
   width: 192px;
@@ -170,6 +175,7 @@ i.bxl-github {
 }
 
 .photo {
+
   padding-top: 116px;
   padding-right: 145px;
 }
@@ -206,10 +212,10 @@ button.btn2 i.bx-down-arrow-alt {
   padding-top: 64px;
   color: rgb(0, 0, 0, 0.5);
   font-size: var(--text-size);
-  line-height: 33px;
+  line-height: 32px;
 }
 .aboutme-body .photo2 {
-  margin-left: 91px;
+  margin-left: 80px;
   padding-top: 109px;
   border-radius: 8px;
 }
@@ -220,7 +226,7 @@ button.btn2 i.bx-down-arrow-alt {
   object-fit: cover;
 }
 .introduction .experience {
-  padding-top: 46px;
+  padding-top: 38px;
   display: flex;
 }
 .experience {
@@ -240,7 +246,7 @@ button.btn2 i.bx-down-arrow-alt {
 }
 
 .introduction .btn3 {
-  margin-top: 47px;
+  margin-top: 20px;
   background-color: var(--background-color);
   border: 1px solid #4c45b2;
   border-radius: var(--btn-radius);
@@ -329,17 +335,17 @@ i.bx-server {
   padding-right: 15px;
 }
 i.bx-palette {
-  font-size: 40px;
+  font-size: 50px;
   transition: transform 0.3s;
   color: #4c45b2;
-  padding-right: 15px;
+  padding-right: 26px;
 }
 .rotate {
   transform: rotate(180deg);
 }
 
 .skill-container {
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 20px;
   border-radius: 10px;
   padding-left: 75px;
@@ -381,13 +387,13 @@ i.bx-palette {
   width: 90%;
 }
 .css .bar-fill {
-  width: 80%;
+  width: 70%;
 }
 .javascript .bar-fill {
-  width: 75%;
+  width: 20%;
 }
 .python .bar-fill {
-  width: 85%;
+  width: 15%;
 }
 
 /* Qualification */
@@ -776,7 +782,7 @@ i.bx-right-arrow-alt {
 .contact-container {
   display: flex;
   align-items: flex-start;
-  gap: 218px;
+  gap: 256px;
 }
 .contacts {
   display: flex;
@@ -884,11 +890,11 @@ textarea.message {
 }
 .footer-part {
   display: flex;
-  gap: 149px;
+  gap: 160px;
 }
 .footer {
   display: flex;
-  gap: 148px;
+  gap: 200px;
 }
 .footer .name {
   padding-left: 190px;
@@ -905,7 +911,7 @@ textarea.message {
 }
 .footer .links {
   display: flex;
-  gap: 31px;
+  gap: 50px;
 }
 .footer .links a {
   color: white;
