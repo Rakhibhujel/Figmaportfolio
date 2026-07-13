@@ -1,5 +1,5 @@
 /*========== GOOGLE FONT ==========*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
 
 /*========== RESET ==========*/
 *{
@@ -419,14 +419,18 @@ header{
 }
 
 .hero-image img{
-    width: 320px;
+    padding-top: 0px;
+    width:100%;
+    max-width: 620px;
     height: 320px;
-    object-fit: cover;
+    display: block;
 }
+
 
 /*========== RESPONSIVE ==========*/
 
 @media (max-width: 992px){
+    
     .hero-image img{
         width: 280px;
         height: 280px;
@@ -434,6 +438,21 @@ header{
 }
 
 @media (max-width: 768px){
+
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-image{
+    order: 1;
+}
+
+.hero-content{
+    order: 2;
+}
+
+
     .hero-image img{
         width: 240px;
         height: 240px;
